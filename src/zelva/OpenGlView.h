@@ -23,17 +23,17 @@ protected: // create from serialization only
 	COpenGlView();
 	DECLARE_DYNCREATE(COpenGlView)
 
-// Attributes
+	// Attributes
 public:
-	COpenGlDoc* GetDocument();
+	COpenGlDoc * GetDocument();
 
-// Operations
+	// Operations
 public:
 
-// Overrides
-	// ClassWizard generated virtual function overrides
-	//{{AFX_VIRTUAL(COpenGlView)
-	public:
+	// Overrides
+		// ClassWizard generated virtual function overrides
+		//{{AFX_VIRTUAL(COpenGlView)
+public:
 	virtual void OnDraw(CDC* pDC);  // overridden to draw this view
 	virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
 	//}}AFX_VIRTUAL
@@ -58,21 +58,21 @@ public:
 	void SetupLighting();
 	HGLRC m_hRC; //Rendering Context
 	CDC* m_pDC; //Device Context
-	
+
 	GLfloat m_xAngle, m_yAngle, m_xPos, m_yPos;
 	CPoint m_MouseDownPoint;
 
-//HGLRC is a 'Handle to a Rendering Context' and we need to obtain a valid rendering context from a Windows Device context which is 
+	//HGLRC is a 'Handle to a Rendering Context' and we need to obtain a valid rendering context from a Windows Device context which is 
 
 	BOOL InitializeOpenGL();
 
 	BOOL SetupPixelFormat();
 
-	void RenderScene ();
+	void RenderScene();
 
 	CCOMMANDLINE *m_pDlg;
 	CEditorDialog *m_pEditorDlg;
-	
+
 
 	virtual ~COpenGlView();
 #ifdef _DEBUG
@@ -81,13 +81,13 @@ public:
 #endif
 
 protected:
-	GLUquadricObj* obj;
+	GLUquadricObj * obj;
 	GLfloat zoom;
 	GLfloat RGBkriz[3];
 
-// Generated message map functions
+	// Generated message map functions
 protected:
-	void Cone(float rx,float ry,float rz,float x,float y,float z);
+	void Cone(float rx, float ry, float rz, float x, float y, float z);
 	//{{AFX_MSG(COpenGlView)
 	afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
 	afx_msg void OnDestroy();
@@ -108,12 +108,14 @@ protected:
 	DECLARE_MESSAGE_MAP()
 
 private:
-	
+
 };
 
 #ifndef _DEBUG  // debug version in OpenGlView.cpp
 inline COpenGlDoc* COpenGlView::GetDocument()
-   { return (COpenGlDoc*)m_pDocument; }
+{
+	return (COpenGlDoc*)m_pDocument;
+}
 #endif
 
 /////////////////////////////////////////////////////////////////////////////
