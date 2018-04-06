@@ -1,0 +1,1 @@
+NOTE: the ClassWizard will add member initialization here

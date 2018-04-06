@@ -1,0 +1,46 @@
+// InterCom.idl : IDL source for InterCom.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (InterCom.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(B874BAF5-413A-40F6-B36B-B648568E49CA),
+		dual,
+		helpstring("IInterface Interface"),
+		pointer_default(unique)
+	]
+	interface IInterface : IDispatch
+	{	
+		[id(2), helpstring("method Load")] HRESULT Load([in]BSTR cesta);
+		[id(3), helpstring("method UnLoad")] HRESULT UnLoad([in]BSTR cesta);
+		[id(4), helpstring("method GetPosChange")] HRESULT GetPosChange([out,retval]BOOL *xx);
+		[id(5), helpstring("method GetLibName")] HRESULT GetLibName([in]int x,[out,retval] BSTR *name);
+		[id(6), helpstring("method GetLibPath")] HRESULT GetLibPath([in]int x,[out,retval] BSTR *path);
+		[id(7), helpstring("method GetComName")] HRESULT GetComName([in]int i,[in] int j,[out,retval] BSTR* name);
+		[id(9), helpstring("method ZpracujPrikaz")] HRESULT ZpracujPrikaz([in]BSTR ret,[in] int x,[out,retval] BSTR *outer);
+		[id(11), helpstring("method GetHistLength")] HRESULT GetHistLength([out,retval] int * length);
+		[id(12), helpstring("method GetPrvekData")] HRESULT GetPrvekData([in] int x, [out, retval] BSTR *data);
+	};
+[
+	uuid(C183D3C1-6993-4E10-BCAD-FA2BA7FAC6C1),
+	version(1.0),
+	helpstring("InterCom 1.0 Type Library")
+]
+library INTERCOMLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(589F17E4-73B3-43A1-9FBF-5A9B09C180B0),
+		helpstring("Interface Class")
+	]
+	coclass Interface
+	{
+		[default] interface IInterface;
+	};
+};

@@ -1,0 +1,113 @@
+# Microsoft Developer Studio Generated Dependency File, included by OpenGl.mak
+
+.\Barvy.cpp : \
+	".\Barvy.h"\
+	".\COMMANDLINE.h"\
+	".\intercom.h"\
+	".\MyInter.h"\
+	".\OpenGl.h"\
+	
+
+.\COMMANDLINE.cpp : \
+	".\COMMANDLINE.h"\
+	".\intercom.h"\
+	".\MyInter.h"\
+	".\OpenGl.h"\
+	
+
+.\EditorDialog.cpp : \
+	".\COMMANDLINE.h"\
+	".\EditorDialog.h"\
+	".\intercom.h"\
+	".\MyInter.h"\
+	".\OpenGl.h"\
+	".\SpecFileDlg.h"\
+	
+
+.\Hdibapi.cpp : \
+	".\Hdibapi.h"\
+	
+
+.\intercom.cpp : \
+	".\intercom.h"\
+	
+
+.\MainFrm.cpp : \
+	".\COMMANDLINE.h"\
+	".\intercom.h"\
+	".\MainFrm.h"\
+	".\MyInter.h"\
+	".\OpenGl.h"\
+	
+
+.\MyInter.cpp : \
+	".\COMMANDLINE.h"\
+	".\intercom.h"\
+	".\MyInter.h"\
+	".\OpenGl.h"\
+	
+
+.\OpenGl.cpp : \
+	"..\..\..\..\..\program files\microsoft visual studio\vc98\include\d3d8.h"\
+	"..\..\..\..\..\program files\microsoft visual studio\vc98\include\d3d8caps.h"\
+	"..\..\..\..\..\program files\microsoft visual studio\vc98\include\d3d8types.h"\
+	".\Barvy.h"\
+	".\COMMANDLINE.h"\
+	".\EditorDialog.h"\
+	".\intercom.h"\
+	".\MainFrm.h"\
+	".\MyInter.h"\
+	".\OpenGl.h"\
+	".\OpenGlDoc.h"\
+	".\OpenGlView.h"\
+	".\SpecFileDlg.h"\
+	
+
+.\OpenGl.rc : \
+	".\res\BOOK01A.ICO"\
+	".\res\BOOK04.ICO"\
+	".\res\ico00001.ico"\
+	".\res\icon1.ico"\
+	".\res\OpenGl.ico"\
+	".\res\OpenGl.rc2"\
+	".\res\OpenGlDoc.ico"\
+	".\res\Toolbar.bmp"\
+	
+
+.\OpenGlDoc.cpp : \
+	".\COMMANDLINE.h"\
+	".\intercom.h"\
+	".\MyInter.h"\
+	".\OpenGl.h"\
+	".\OpenGlDoc.h"\
+	
+
+.\OpenGlView.cpp : \
+	"..\..\..\..\..\program files\microsoft visual studio\vc98\include\d3d8.h"\
+	"..\..\..\..\..\program files\microsoft visual studio\vc98\include\d3d8caps.h"\
+	"..\..\..\..\..\program files\microsoft visual studio\vc98\include\d3d8types.h"\
+	".\Barvy.h"\
+	".\COMMANDLINE.h"\
+	".\EditorDialog.h"\
+	".\Hdibapi.h"\
+	".\intercom.h"\
+	".\MyInter.h"\
+	".\OpenGl.h"\
+	".\OpenGlDoc.h"\
+	".\OpenGlView.h"\
+	".\SpecFileDlg.h"\
+	
+
+.\SpecFileDlg.cpp : \
+	".\COMMANDLINE.h"\
+	".\intercom.h"\
+	".\MyInter.h"\
+	".\OpenGl.h"\
+	".\SpecFileDlg.h"\
+	
+
+.\StdAfx.cpp : \
+	"..\..\..\..\..\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	"..\..\..\..\..\program files\microsoft visual studio\vc98\include\gl\glut.h"\
+	".\StdAfx.h"\
+	

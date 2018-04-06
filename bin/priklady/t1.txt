@@ -1,0 +1,58 @@
+include t2.txt
+
+define  Ctverec  (  n  )
+forward(n)
+loop(3)
+LR(90)
+forward(n)
+lend
+end
+
+define RRTriangel(n)
+forward(n)
+loop(2)
+LR(120)
+forward(n)
+lend
+end
+
+define X(n)
+UD(15)
+CL(45)
+loop(15)
+Ctverec(n)
+LR(24)
+lend
+end
+
+define Ct(n)
+make(a,n)
+make(n,2+5+4)
+forward(n)
+LR(90)
+forward(n)
+LR(90)
+forward(n)
+LR(90)
+forward(n)
+end
+
+define Ob(a,b)
+forward(a)
+LR(90)
+forward(b)
+LR(90)
+forward(a)
+LR(90)
+forward(b)
+end
+
+define beta(long,angle,count)
+loop(count)
+forward(long)
+make(long,long-0.1)
+UD(angle)
+lend
+troj.xx(6,7,8)
+end
+

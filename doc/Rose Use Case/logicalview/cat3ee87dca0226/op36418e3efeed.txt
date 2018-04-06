@@ -1,0 +1,7 @@
+*******************************************************************
+vraci text z retezce od pozice from do pozice to
+from	: in int
+to		: in int
+ret		: CString vtupni retezec
+return	: CString
+*******************************************************************

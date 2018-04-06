@@ -1,0 +1,2 @@
+HGLRC is a 'Handle to a Rendering Context' and we need to obtain a valid rendering context from a Windows Device context which is
+Get a DC for the Client Area

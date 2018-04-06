@@ -1,0 +1,25 @@
+define branch(length,level)
+if(level > 0)
+turtle
+  forward(length)
+  LR(45)
+  branch(length*3/4,level-1)
+  LR(-90)
+  branch(length*3/4,level-1)
+  LR(45)
+tend
+  iend
+end
+
+define main()
+ clear
+ branch(8, 9)
+end
+
+define z(a,b)
+if(a>0)
+forward(a)
+LR(b)
+z(a-1,b*(-2))
+iend
+end

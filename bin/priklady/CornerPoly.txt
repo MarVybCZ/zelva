@@ -1,0 +1,24 @@
+define cornerpoly(size,angle)
+ if (size > 10)
+  loop(360/abs(angle))
+   forward (size/10)
+   cornerpoly (size/2,(-angle))
+   LR(-angle)
+  lend
+ iend
+end
+
+define CornerPoly1
+ clear
+ cornerpoly( 100, 60)
+end
+
+define CornerPoly2
+ clear
+ cornerpoly( 200, 90)
+end
+
+define CornerPoly3
+ clear
+ cornerpoly( 200, 120)
+end

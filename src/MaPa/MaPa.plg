@@ -1,0 +1,51 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MaPa - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "G:\DOCUME~1\VYBRAL~1\LOCALS~1\Temp\RSP3.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "_WINDLL" /Fp"Debug/MaPa.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"G:\UKOLY\tretak\projekt\zl3.12.5\MaPa\MaPaInter.cpp"
+]
+Creating command line "cl.exe @G:\DOCUME~1\VYBRAL~1\LOCALS~1\Temp\RSP3.tmp" 
+Creating temporary file "G:\DOCUME~1\VYBRAL~1\LOCALS~1\Temp\RSP4.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:yes /pdb:"Debug/MaPa.pdb" /debug /machine:I386 /def:".\MaPa.def" /out:"Debug/MaPa.dll" /implib:"Debug/MaPa.lib" /pdbtype:sept 
+.\Debug\Lexer.obj
+.\Debug\MaPa.obj
+.\Debug\MaPaInter.obj
+.\Debug\MathParser.obj
+.\Debug\StdAfx.obj
+.\Debug\StrMap.obj
+.\Debug\SymTable.obj
+.\Debug\MaPa.res
+]
+Creating command line "link.exe @G:\DOCUME~1\VYBRAL~1\LOCALS~1\Temp\RSP4.tmp"
+Creating temporary file "G:\DOCUME~1\VYBRAL~1\LOCALS~1\Temp\RSP5.bat" with contents
+[
+@echo off
+regsvr32 /s /c ".\Debug\MaPa.dll"
+echo regsvr32 exec. time > ".\Debug\regsvr32.trg"
+]
+Creating command line "G:\DOCUME~1\VYBRAL~1\LOCALS~1\Temp\RSP5.bat"
+Compiling...
+MaPaInter.cpp
+G:\UKOLY\tretak\projekt\zl3.12.5\MaPa\MaPaInter.cpp(2) : warning C4651: '/D_DLL' specified for precompiled header but not for current compile
+G:\UKOLY\tretak\projekt\zl3.12.5\MaPa\MaPaInter.cpp(2) : warning C4651: '/D_AFXDLL' specified for precompiled header but not for current compile
+Linking...
+   Creating library Debug/MaPa.lib and object Debug/MaPa.exp
+LINK : warning LNK4098: defaultlib "LIBCMTD" conflicts with use of other libs; use /NODEFAULTLIB:library
+<h3>Output Window</h3>
+Performing registration
+
+
+
+<h3>Results</h3>
+MaPa.dll - 0 error(s), 3 warning(s)
+</pre>
+</body>
+</html>

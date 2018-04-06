@@ -1,0 +1,6 @@
+*******************************************************************
+Najde v pameti pozadovany prikaz
+prikaz	: in CString jmeno prikazu
+knihovna: in CString* jmeno knihovny ve ktere prikaz je
+return	: CPrikazy* nalezeny prikaz neuspech vraci NULL
+*******************************************************************

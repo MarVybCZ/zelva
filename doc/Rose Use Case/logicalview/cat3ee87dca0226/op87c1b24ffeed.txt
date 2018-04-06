@@ -1,0 +1,2 @@
+rotace kolem vlastni osy
+celkemUD +=angle;

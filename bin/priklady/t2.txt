@@ -1,0 +1,69 @@
+define Polygon(r,s)
+make(ob,2*r*3.1415)
+make(alpha,360/s)
+make(st,ob/s)
+loop(s)
+forward(st)
+LR(alpha)
+lend
+end
+
+define x(r,poc)
+loop(poc)
+Polygon(r,poc)
+make(poc,poc-1)
+lend
+end
+
+define h(a,r,angel,poc)
+loop(poc)
+make(a2,360/poc)
+CL(a2)
+turtle()
+LR(angel)
+forward(a/2)
+if(r>0)
+h(a/2,r-1,20,6)
+iend
+tend
+lend
+end
+
+define padacek()
+forward(1)
+h(1,2,25,5)
+end
+
+define pad(poc,angel)
+loop(poc)
+make(x,360/poc)
+CL(x)
+turtle()
+UD(angel)
+padacek()
+tend
+lend
+end
+
+define pamp()
+UD(90)
+setcolor(0,1,0)
+forward(4)
+setcolor(1,1,1)
+pad(1,0)
+pad(4,25)
+pad(6,50)
+pad(7,75)
+pad(7,100)
+pad(6,125)
+pad(4,150)
+end
+
+define test (  a,c,b   )
+     UD( 90 )   
+ setcolor ( 0.5 , b , c  )
+forward(4)
+setcolor(1,1,1)
+pad(a,c)
+pad(b,a)
+end

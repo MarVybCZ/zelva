@@ -1,0 +1,6 @@
+index actualne zpracovavane knihovny
+*******************************************************************
+Prida knihovnu do pole knihoven
+cesta	: in CString cesta k souboru
+return	: bool - true if succesfull, otherwise false
+*******************************************************************

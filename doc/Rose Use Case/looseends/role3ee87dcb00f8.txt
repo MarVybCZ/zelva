@@ -1,0 +1,6 @@
+cesta k souboru knihovny
+*******************************************************************
+hleda prikaz
+nazev	: in CString nazev hledaneho prikazu
+return	: CPrikazy*
+*******************************************************************

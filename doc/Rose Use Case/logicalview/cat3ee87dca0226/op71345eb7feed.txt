@@ -1,0 +1,7 @@
+*******************************************************************
+Vyhodnoti matematicky vyraz
+ret		: in CString matematicky vyraz
+PoleParam: in CArray<CParametrs, CParametrs>* pointer na pole
+parametru na kterych se ma vyraz vyhodnotit
+return	: double hodnota vyrazu neuspech vraci 0
+*******************************************************************

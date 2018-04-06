@@ -1,0 +1,5 @@
+*******************************************************************
+Nastavy novou hodnotu promenne nebo vytvori novou promennou
+vyraz	: in CExpression*
+return	: void
+*******************************************************************

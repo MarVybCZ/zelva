@@ -1,0 +1,5 @@
+*******************************************************************
+Obsluhuji vykonavani prikazu
+vyraz	: in CExpression prikaz ktery se ma vykonat
+return	: bool true kdyz nasel prikaz false kdyz nenasel
+*******************************************************************

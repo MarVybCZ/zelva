@@ -1,0 +1,1 @@
+nazev knihovny - nazev souboru bez cesty a bez pripony

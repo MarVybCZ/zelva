@@ -1,0 +1,7 @@
+*******************************************************************
+Najde pozadovanou knihovnu
+lib		: in CString* jmeno knihovny
+index	: out int* index hledane knihovny
+return	: CLibrary* pointer na nalezenou knihovnu
+neuspech vraci NULL
+*******************************************************************

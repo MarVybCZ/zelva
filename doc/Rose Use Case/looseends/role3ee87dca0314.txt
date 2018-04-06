@@ -1,0 +1,6 @@
+*******************************************************************
+zpracuje parametry vcetne jejich vyhodnoceni a ulozi do pole parametru
+poz		: in int
+ret		: in CString
+return	: void
+*******************************************************************

@@ -1,0 +1,2 @@
+Pixel Format Structure
+The capabilities of the OpenGL Window depends on the pixel format selected for the OpenGL rendering Window. The properties of this format include:

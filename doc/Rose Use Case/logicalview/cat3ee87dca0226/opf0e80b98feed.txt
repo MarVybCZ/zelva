@@ -1,0 +1,2 @@
+obsluhuje pendown penup
+celkemCL +=angle;

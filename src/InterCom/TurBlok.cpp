@@ -1,0 +1,27 @@
+// TurBlok.cpp: implementation of the CTurBlok class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "TurBlok.h"
+
+#ifdef _DEBUG
+#undef THIS_FILE
+static char THIS_FILE[]=__FILE__;
+#define new DEBUG_NEW
+#endif
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+CTurBlok::CTurBlok(CString value)
+{
+	Nazev = "TURTLE";
+	Value = value;
+}
+
+CTurBlok::~CTurBlok()
+{
+
+}

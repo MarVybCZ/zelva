@@ -1,0 +1,26 @@
+HKCR
+{
+	InterCom.Interface.1 = s 'Interface Class'
+	{
+		CLSID = s '{589F17E4-73B3-43A1-9FBF-5A9B09C180B0}'
+	}
+	InterCom.Interface = s 'Interface Class'
+	{
+		CLSID = s '{589F17E4-73B3-43A1-9FBF-5A9B09C180B0}'
+		CurVer = s 'InterCom.Interface.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {589F17E4-73B3-43A1-9FBF-5A9B09C180B0} = s 'Interface Class'
+		{
+			ProgID = s 'InterCom.Interface.1'
+			VersionIndependentProgID = s 'InterCom.Interface'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{C183D3C1-6993-4E10-BCAD-FA2BA7FAC6C1}'
+		}
+	}
+}

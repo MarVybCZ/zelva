@@ -1,0 +1,9 @@
+#ifndef _LIB
+#if !defined (_DEBUG)
+#pragma comment(lib, "MathParser.lib")
+#pragma message("linking with MathParser.lib")
+#else
+#pragma comment(lib, "MathParserD.lib")
+#pragma message("linking with MathParserD.lib")
+#endif // !defined (_DEBUG)
+#endif // _LIB

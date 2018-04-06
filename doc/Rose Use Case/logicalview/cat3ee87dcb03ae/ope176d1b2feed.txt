@@ -1,0 +1,2 @@
+First clear the buffers
+Clear out the color & depth buffers

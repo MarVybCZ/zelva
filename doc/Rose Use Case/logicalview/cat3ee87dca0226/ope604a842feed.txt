@@ -1,0 +1,7 @@
+zjisti a provede uzivatelem definovany prikaz
+*******************************************************************
+Obsluhuje direktivu define prik(param) .. end
+Zajistuje definovani uzivatelskych prikazu
+param	: in CString prikaz
+return	: void
+*******************************************************************

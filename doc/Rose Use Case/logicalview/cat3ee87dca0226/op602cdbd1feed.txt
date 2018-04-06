@@ -1,0 +1,1 @@
+najde promenou daneho jmena vraci CParametrs*

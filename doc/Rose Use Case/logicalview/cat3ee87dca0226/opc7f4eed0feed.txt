@@ -1,0 +1,5 @@
+*******************************************************************
+Vraci chybovou hlasku
+prik	: in CString prikaz ve kterem nastala chyba
+return	: void
+*******************************************************************

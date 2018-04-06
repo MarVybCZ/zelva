@@ -1,0 +1,5 @@
+*******************************************************************
+Obsluhuje prikaz while(exp)	.. wend
+vyraz	: in CString podminka pro vykonani
+return	: void
+*******************************************************************

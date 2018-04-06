@@ -1,0 +1,1 @@
+Comment Start Symbol Number. -1 if none

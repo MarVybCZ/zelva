@@ -1,0 +1,79 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: OpenGl - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "G:\DOCUME~1\VYBRAL~1\LOCALS~1\Temp\RSP6E.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /Fp"Release/OpenGl.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"G:\UKOLY\relaese\src\zelva\Barvy.cpp"
+"G:\UKOLY\relaese\src\zelva\COMMANDLINE.cpp"
+"G:\UKOLY\relaese\src\zelva\EditorDialog.cpp"
+"G:\UKOLY\relaese\src\zelva\Hdibapi.cpp"
+"G:\UKOLY\relaese\src\zelva\intercom.cpp"
+"G:\UKOLY\relaese\src\zelva\MainFrm.cpp"
+"G:\UKOLY\relaese\src\zelva\MyInter.cpp"
+"G:\UKOLY\relaese\src\zelva\OpenGl.cpp"
+"G:\UKOLY\relaese\src\zelva\OpenGlDoc.cpp"
+"G:\UKOLY\relaese\src\zelva\OpenGlView.cpp"
+"G:\UKOLY\relaese\src\zelva\SpecFileDlg.cpp"
+]
+Creating command line "cl.exe @G:\DOCUME~1\VYBRAL~1\LOCALS~1\Temp\RSP6E.tmp" 
+Creating temporary file "G:\DOCUME~1\VYBRAL~1\LOCALS~1\Temp\RSP6F.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /Fp"Release/OpenGl.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"G:\UKOLY\relaese\src\zelva\StdAfx.cpp"
+]
+Creating command line "cl.exe @G:\DOCUME~1\VYBRAL~1\LOCALS~1\Temp\RSP6F.tmp" 
+Creating temporary file "G:\DOCUME~1\VYBRAL~1\LOCALS~1\Temp\RSP70.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/OpenGl.pdb" /machine:I386 /out:"Release/OpenGl.exe" 
+.\Release\Barvy.obj
+.\Release\COMMANDLINE.obj
+.\Release\EditorDialog.obj
+.\Release\Hdibapi.obj
+.\Release\intercom.obj
+.\Release\MainFrm.obj
+.\Release\MyInter.obj
+.\Release\OpenGl.obj
+.\Release\OpenGlDoc.obj
+.\Release\OpenGlView.obj
+.\Release\SpecFileDlg.obj
+.\Release\StdAfx.obj
+.\Release\OpenGl.res
+]
+Creating command line "link.exe @G:\DOCUME~1\VYBRAL~1\LOCALS~1\Temp\RSP70.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+Barvy.cpp
+COMMANDLINE.cpp
+G:\UKOLY\relaese\src\zelva\COMMANDLINE.cpp(84) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+EditorDialog.cpp
+G:\UKOLY\relaese\src\zelva\EditorDialog.cpp(86) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+G:\UKOLY\relaese\src\zelva\EditorDialog.cpp(229) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+G:\UKOLY\relaese\src\zelva\EditorDialog.cpp(578) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+Hdibapi.cpp
+intercom.cpp
+MainFrm.cpp
+MyInter.cpp
+G:\UKOLY\relaese\src\zelva\MyInter.cpp(100) : warning C4800: 'long' : forcing value to bool 'true' or 'false' (performance warning)
+OpenGl.cpp
+OpenGlDoc.cpp
+OpenGlView.cpp
+G:\UKOLY\relaese\src\zelva\OpenGlView.cpp(796) : warning C4800: 'char' : forcing value to bool 'true' or 'false' (performance warning)
+SpecFileDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+OpenGl.exe - 0 error(s), 6 warning(s)
+</pre>
+</body>
+</html>

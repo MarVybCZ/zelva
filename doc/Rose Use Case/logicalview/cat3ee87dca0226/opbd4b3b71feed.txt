@@ -1,0 +1,5 @@
+*******************************************************************
+Nacitaji blok/radek ze souboru
+soub	: in FILE* ukazatel na soubor
+return	: CString vraci blok nebo radek
+*******************************************************************

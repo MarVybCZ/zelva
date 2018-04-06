@@ -1,0 +1,5 @@
+*******************************************************************
+Obsluhuje direktivu Loop(exp) .. lend
+param	: in CString podminka pro vykonani
+return	: void
+*******************************************************************

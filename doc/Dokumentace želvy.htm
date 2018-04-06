@@ -1,0 +1,527 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>New Page 1</title>
+</head>
+
+<body>
+
+<table border="0" width="844">
+  <tr>
+    <td width="834"><a href="#ABSTRAKT">Abstrakt</a><br>
+      <a href="#UZDOK">
+      Uživatelská dokumentace</a><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#HLAOK"> Hlavní okno</a><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#PRIKRAD">Příkazový řádek</a><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#EDITOR">Editor</a><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#POPJAZ">Popis jazyka</a><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#ELPR">Elementární
+      příkazy</a><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#PRIN">Příkazy
+      Interpretu</a><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#UZPR">Uživatelské
+      příkazy</a><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#MATVYR">Matematické výrazy</a><br>
+      <a href="#PROGDOK">
+      Programátorská dokumentace</a><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#PAMA"> Matematický parser</a><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#INTJAZ"> Interpret</a><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#VLAPROG">Vlastní program</a><br>
+      <br>
+      <a href="Enterprise%20Architekt%20Use%20Case/index.htm" target="_blank">Use
+      Case <i> </i>– Enterprise Architect</a>
+      <p><a href="Rose%20Use%20Case/Rose.htm" target="_blank">Use Case <i> </i>–
+      Rational Rose</a></p>
+      <p><br>
+      <br><br><A name=ABSTRAKT></A>
+      <b>
+        <font size="5">
+    	Abstrakt</font></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Tématem tohoto projektu je Želví grafika v prostoru. Želva je stroj, který vykonává určité příkazy
+ a v důsledku pak vykresluje určité obrazce. Lze použít ke generování lineárních fraktálů. Pro komunikaci se želvou je použita
+      modifikace jazyka LOGO. Jazyk LOGO se obecně používá k demonstraci elementárního programování, jako výukový prostředek.
+      <br><br><br>
+      <A name=UZDOK></A>
+      <b>
+<font size="5">
+Uživatelská dokumentace<br>
+<br><A name=HLAOK></A>
+</font><font size="3">Hlavní okno<br>
+</font><font size="4"><br>
+</font></b>
+Menu obsahuje 4 položky<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>Prikazovy radek </i>– spustí příkazový řádek<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>Editor</i> – spustí editor jazyka logo<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>Nastavení</i> – nastavení barvy pozadí a barvy osového kříže<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>Export</i> – export obrázku do postskriptu<br>
+<br>
+Obraz v hlavním okně lze posouvat šipkami, nebo zoomovat pomocí +,-<br>
+      <br>
+<br>
+      <b><A name=PRIKRAD></A>
+Příkazový řádek&nbsp;<br>
+      <br>
+      </b>Do příkazové řádku se píší příkazy
+      které želva vykonává jsou to elementární příkazy želvy nebo uživatelem
+      definované příkazy.<br>
+      <br>
+      <br><A name=EDITOR></A>
+      <span style="mso-bidi-font-size: 12.0pt"><b>Editor<o:p>
+      &nbsp;<br>
+      <br>
+      </b>
+      </span><i>Prohlížeč stromových struktur</i><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Při nahraní souboru se zobrazí jméno
+      souboru (knihovny) bez přípony a při jeho vybrání se rozbalí seznam
+      příkazů, které obsahuje. Příkazy s&nbsp;ikonou zeleného kola na černém
+      poli lze spustit poklepáním.<br>
+      <br>
+      Při zmáčknutí pravého tlačítka myši se zobrazí kontextové
+      menu obsahující příkazy:<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Open..<span style="mso-tab-count:
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>slouží
+      k&nbsp;otevření souboru<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Load<span style="mso-tab-count:
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>slouží
+      k&nbsp;načtení obsahu souboru do editačního okna – jde-li o příkaz,
+      je editační okno rolováno na jeho pozici<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Save<span style="mso-tab-count:
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>slouží
+      uložení text z editačního okna<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      UnLoad&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; slouží k&nbsp;vymazání souboru z&nbsp;paměti<br>
+      <br>
+      Editační okno slouží k editování příkazů jazyka LOGO<b>
+      <span style="mso-bidi-font-size: 12.0pt"><br>
+      <br>
+      <br><A name=POPJAZ></A>
+      <font size="4">Popis jazyka LOGO</font></span></b><span style="mso-tab-count:1"><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Příkazy lze rozdělit do tří skupin.<br>
+      <br>
+      <A name=ELPR></A>
+      <b>Elementární příkazy želvy:<o:p>
+      &nbsp;<br>
+      </b><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span>forward(exp)<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>–
+      želva udělá krok o hodnotu exp dopředu<span style="mso-tab-count:1"><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color:black">setcolor(exp,exp,exp) – změní se
+      barva pera podle hodnot exp</span><span lang="EN-US" style="color:black;mso-ansi-language:EN-US">&lt;=1</span><span style="mso-tab-count: 1; color: black; mso-ansi-language: EN-US" lang="EN-US"><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color:black">setpos(exp,exp,exp)<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;</span>–
+      želva se nastaví na pozici x,y,z</span><span style="mso-tab-count:1"><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color:black">LR(exp)<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>– želva se otočí doleva o hodnotu exp stupňů rotace kolem
+      osy y</span><span style="mso-tab-count:1"><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color:black">UD(exp)<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>– želva se otočí nahoru o hodnotu exp stupňů rotace kolem
+      osy z<br>
+      </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:black">CL(exp)<span style="mso-tab-count:
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-tab-count:1">&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>– želva se otočí doleva o hodnotu exp stupňů rotace kolem
+      osy x (vlastní osa)<br>
+      </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:black">clear<span style="mso-tab-count:
+1">&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>– smaže celé okno, vše co se vykreslilo<o:p></o:p><br>
+      </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:black">PenUp<span style="mso-tab-count:
+1"> </span><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>–
+      zvedne pero<br>
+      &nbsp; <o:p>
+      </o:p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><style="text-indent:35.4pt;mso-layout-grid-align:none;
+text-autospace:none"><span style="color:black">PenDown<span style="mso-tab-count:
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span>– položí pero<o:p>
+      &nbsp;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; home&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;–
+      želva se vrátí do původní pozice<b><br>
+      <br>
+      <A name=PRIN></A>
+      Příkazy pro interpret:<o:p>
+      &nbsp;<br>
+      </b><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span>include<span style="mso-tab-count:1"> </span>cesta<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span>– otevře soubor na příslušné cestě<o:p>
+      &nbsp;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; define jméno(param)<span style="mso-tab-count:1">
+      &nbsp;&nbsp; </span>– definuje uživatelské příkazy<o:p>
+      &nbsp;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      tělo<o:p>&nbsp;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end<o:p>
+      &nbsp;<br>
+      <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; loop(exp)
+      <span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span>– provede exp-krát příkazy; exp se nemění<o:p>
+      &nbsp;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      příkazy<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; lend<span style="mso-tab-count:
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p>
+      &nbsp;<br>
+      <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(exp)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span>– pokud je podmínka exp splněna provede prříkazy1 jinak&nbsp;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      příkazy1 <span style="mso-tab-count:
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span>příkazy2<o:p>
+      &nbsp;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else <o:p>
+      &nbsp;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      příkazy2<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; iend<o:p>
+      &nbsp;<br>
+      <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; make(proměnná, exp)<span style="mso-tab-count:1">
+      </span>– proměnné přiřadí hodnotu exp<o:p>
+      &nbsp;<br>
+      <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; while(exp)<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span>– dokud platí výraz exp provádí se příkazy<o:p>
+      &nbsp;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      příkazy<o:p>
+      &nbsp;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; wend<o:p>
+      &nbsp;<br>
+      <br>
+      </o:p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      turtle<span style="mso-tab-count:
+1">&nbsp;&nbsp;&nbsp; </span><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span>– „vytvoří“ novou želvu a provede příkazy / želva se vrátí
+      do <o:p>
+      &nbsp;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      příkazy<span style="mso-tab-count:
+1"> </span><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span>stavu před příkazem turtle<o:p>
+      &nbsp;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tend<o:p>
+      &nbsp;<br>
+      <br>
+      <A name=UZPR></A>
+      <b>Uživatelem
+      definované příkazy:<o:p>
+      &nbsp;<br>
+      </b><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span>Př.: <o:p>
+      &nbsp;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; define Trojuhel(a) <o:p>
+      &nbsp;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;loop(3)<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;forward(a)<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LR(120)<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lend<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end<o:p>
+      &nbsp;<br>
+      <br>
+      Pozn.:<o:p>
+      &nbsp;<br>
+      U
+      jmen příkazů program rozpoznává mezi malými a velkými písmeny (<i>Ctverec,
+      ctverec</i> jsou dva různé příkazy), u jmen proměnných nerozpoznává
+      (<i>B, b</i> je má tu samou hodnotu).<o:p>
+      &nbsp;<br>
+      <br>
+      </span>exp je matematický/logický výraz – nerozlišuje mezi malými a
+      velkými písmeny.<br>
+      <br>
+      Program má podporu knihoven.<br>
+      Př.:<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; soubor <i>xx.txt</i> obsahuje příkaz <i>XX(prom1
+      ,prom2)<o:p>
+      &nbsp;<br>
+      </o:p></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      soubor <i>yy.txt</i> obsahuje příkaz <i>XX(prom)<br>
+      </i>volání <i>xx.XX(1,2)</i> zavolá příkaz z&nbsp;knihovny <i>xx.txt<br>
+      </i>volání <i>XX(1 nebo 2 parametry)</i> zavolá příkaz z&nbsp;knihovny,
+      která byla dříve nahrána
+      <br>
+      <br>
+      <br>
+      <A name=MATVYR></A>
+      <b><font size="4">Matematické výrazy</font></b><br><br>
+      Podpora matematických konstant E, Pi<br><br>
+      <b>
+      Matematické operace</b><br>
+      +,-,*,/
+      %&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; zbytek po dělení<br>
+      **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      mocnina<span style="mso-bidi-font-size:9.0pt"><br>
+      &amp; | ^ ~ <b><span style="mso-spacerun: yes">&nbsp;</span><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></b>and / or / xor / not <o:p>
+      &nbsp;<br>
+      $ <span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="mso-tab-count: 1">
+      </span>A
+      $ B – celočíselně dělí A by B; když je zbytek, výsledek se zvýší
+      o 1. Příklad: pro produkci B (nebo méně) jednotek zboží použijeme
+      jednu jednotku zdrojů. Je nutné vědět kolik je jednotek zdrojů budeme
+      potřebovat k&nbsp;výrobě A jednotek zboží.<span style="mso-spacerun:
+yes">&nbsp;&nbsp; </span>13</span><span lang="EN-US" style="mso-bidi-font-size:9.0pt;
+mso-ansi-language:EN-US">$</span><span style="mso-bidi-font-size:9.0pt">4 = 4<o:p>
+      &nbsp;<br>
+      <br>
+      </span><b>Logické operace</b><br>
+      &lt;&gt;, =, &gt;, &lt;<span style="mso-spacerun: yes">&nbsp;&nbsp; </span><span style="mso-tab-count:1">&nbsp;&nbsp;</span>nerovno/rovno/větší/menší<br>
+      &amp;&amp;, || <span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span>logický and/or<br>
+      <br>
+      <b>Funkce<br>
+      </b>ARCTAN, COS, SIN, TAN, ABS, EXP, LN, LOG, SQRT, SQR,INT, FRAC, TRUNC, ROUND( x, precision ), ARCSIN, ARCCOS, SGN, SIGN&nbsp;<o:p>
+      &nbsp;<br>
+      <br>
+      Podmíněné výrazy<br>
+      <span lang="EN-US" style="mso-ansi-language:EN-US">&lt;podmínka&gt; ?
+      &lt;true</span> výraz<span lang="EN-US" style="mso-ansi-language:EN-US">&gt;
+      : &lt;false</span> výraz<span lang="EN-US" style="mso-ansi-language:EN-US">&gt;<o:p>
+      &nbsp;<br>
+      <br>
+      </span><b>Příklady správných výrazů:<o:p>
+      &nbsp;<br>
+      </b>(sin(Pi/2) + 1) / 4 = 0.5<br>
+      2 &gt; 3 = 0 (false)<br>
+      (2*2=4) ? 1 : 0 = 1<br>
+      round( 1.2345, 2 ) = 1.23<br>
+      round( 27.45, -1 ) = 30</p>
+      <p>&nbsp;</p>
+      <p><A name=PROGDOK></A>
+      <b><span style="mso-bidi-font-size: 12.0pt"><font size="5">Programátorská
+      dokumentace<br>
+      <br>
+      </font></span></b><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span>Program se skládá ze tří částí. Parser matematických výrazů
+      je obsažen v&nbsp;knihovně MaPa.dll, Interpret jazyka je obsažen v&nbsp;knihovně
+      InterCom.dll a vlastní program je OpenGl.exe.<br>
+      <br>
+      <br>
+      <A name=PAMA></A>
+      <font size="4"><b>Parser matematických výrazů – MaPa.dll<br>
+      <br>
+      </b></font><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span>Pro parserování matematických výrazů jsem použil původně
+      lib knihovnu, staženou ze stránek <a href="http://kirya.narod.ru/mathparser.html"><span style="mso-ansi-font-size:
+12.0pt;mso-bidi-font-size:12.0pt;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;">http://kirya.narod.ru/mathparser.html</span></a>,
+      a přepsal jsem ji do ATL/COM objektu. Tato knihovna pracuje s&nbsp;matematickými
+      výrazy, tak jak jsou popsány v&nbsp;sekci Matematické výrazy.<br>
+      <br>
+      Rozhraním této knihovny jsou fce:</p>
+      <p><span style="color:blue">void</span><span style="color:black">
+      </span><span style="color:#880000">AddString</span><span style="color:black">(</span><span style="color:blue">BSTR</span><span style="color:black">*
+      </span><span style="color:gray">name</span><span style="color:black">, </span><span style="color:blue">double</span><span style="color:black">*
+      </span><span style="color:gray">value</span><span style="color:black">)&nbsp;
+      přidává jméno a hodnotu proměnné<o:p>
+      &nbsp;
+      </span></p>
+      <p><span style="color:blue">double</span><span style="color:black">
+      </span><span style="color:#880000">Parse</span><span style="color:black">(</span><span style="color:blue">BSTR</span><span style="color:black">*
+      </span><span style="color:gray">Formula</span><span style="color:black">)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      parseruje výraz Formula, vrací hodnotu výrazu do proměnné CString
+      </span><span style="color:gray">ErrorMessage
+      </span><span style="color:black">uloží chybovou hlášku<o:p>
+      &nbsp;
+      </span></p>
+      <p><span style="color:blue">CString</span><span style="color:black"> </span><span style="color:#880000">GetErrorMes</span><span style="color:black">()&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      vrací chybovou hlášku<o:p>
+      &nbsp;<br>
+      <br>
+      <b>Základními třídami jsou:<o:p>
+      </b> &nbsp;<o:p>
+      &nbsp;<br>
+      CStrMap(strmap.h) <span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span>– je nutné ji použít pro vkládání vlastních uživatelsky
+      definovaných proměnných a funkcí <o:p>
+      &nbsp;<o:p>
+      &nbsp;<br>
+      CLexer (lexer.h)<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span>– universální lexikální analyzátor<o:p>
+      &nbsp;<o:p>
+      &nbsp;<br>
+      CMathParser(mathparser.h)<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;</span></span>&nbsp;
+      <span style="color:black">– hlavní třída, která vypočítává výrazy<o:p>
+      </span>&nbsp;<o:p>
+      &nbsp;<br>
+      <br>
+      Bližší popis v&nbsp;souboru <a href="My%20Site.htm"> MySite.htm<br>
+      <br>
+      </a><font size="4"><b><br>
+      <A name=INTJAZ></A>
+      Interpret jazyka – InterCom.dll<br>
+      </b></font><b><br>
+      <span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span>
+      </b>Tato knihovna slouží ke zpracování všech příkazů a výrazů,
+      a ke správě uživatelem definovaných příkazů a knihoven. Využívá
+      knihovnu MaPa.dll.</p>
+      <p>Její rozhraní poskytuje tyto metody:<span style="mso-bidi-font-size: 12.0pt; color: black">&nbsp;<o:p>
+      </o:p>
+      </span></p>
+      <p style="mso-layout-grid-align:none;text-autospace:none"><span style="color:blue">void</span><span style="color:black">
+      </span><span style="color:#880000">Load</span><span style="color:black">(</span><span style="color:blue">LPCTSTR</span><span style="color:black">
+      </span><span style="color:gray">cesta</span><span style="color:black">)<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span>Nahraje soubor na dané cestě do svých struktur<o:p>
+      </o:p>
+      </span></p>
+      <p style="mso-layout-grid-align:none;text-autospace:none"><span style="color:blue">void</span><span style="color:black">
+      </span><span style="color:#880000">UnLoad</span><span style="color:black">(</span><span style="color:blue">LPCTSTR</span><span style="color:black">
+      </span><span style="color:gray">cesta</span><span style="color:black">)<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span><span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span>Smaže soubor ze svých struktur<o:p>
+      </o:p>
+      </span></p>
+      <p style="mso-layout-grid-align:none;text-autospace:none"><span style="color:blue">long</span><span style="color:black">
+      </span><span style="color:#880000">GetPosChange</span><span style="color:black">()<span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span><span style="mso-tab-count:
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;
+      </span>Indikuje
+      použití příkazu setpos(x,y,z)<o:p>
+      </o:p>
+      </span></p>
+      <p style="mso-layout-grid-align:none;text-autospace:none"><span style="color:blue">CString</span><span style="color:black">
+      </span><span style="color:#880000">GetLibName</span><span style="color:black">(</span><span style="color:blue">long</span><span style="color:black">
+      </span><span style="color:gray">x</span><span style="color:black">)<span style="mso-tab-count:
+1">&nbsp;&nbsp;&nbsp; </span><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span>Vrací jméno knihovny na indexu x<o:p>
+      </o:p>
+      </span></p>
+      <p style="mso-layout-grid-align:none;text-autospace:none"><span style="color:blue">CString</span><span style="color:black">
+      </span><span style="color:#880000">GetLibPath</span><span style="color:black">(</span><span style="color:blue">long</span><span style="color:black">
+      </span><span style="color:gray">x</span><span style="color:black">)<span style="mso-tab-count:
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span><span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span>Vrací cestu knihovny na indexu x<o:p>
+      </o:p>
+      </span></p>
+      <p style="mso-layout-grid-align:none;text-autospace:none"><span style="color:blue">CString</span><span style="color:black">
+      </span><span style="color:#880000">GetComName</span><span style="color:black">(</span><span style="color:blue">long</span><span style="color:black">
+      </span><span style="color:gray">i</span><span style="color:black">, </span><span style="color:blue">long</span><span style="color:black">
+      </span><span style="color:gray">j</span><span style="color:black">)<span style="mso-tab-count:
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-tab-count: 1">&nbsp;&nbsp;
+      </span>Vrací
+      název příkazu z&nbsp;knihovny i, na pozici j, i s&nbsp;jejími
+      parametry<o:p>
+      </o:p>
+      </span></p>
+      <p style="mso-layout-grid-align:none;text-autospace:none"><span style="color:blue">CString</span><span style="color:black">
+      </span><span style="color:#880000">ZpracujPrikaz</span><span style="color:black">(</span><span style="color:blue">LPCTSTR</span><span style="color:black">
+      </span><span style="color:gray">ret</span><span style="color:black">, </span><span style="color:blue">long</span><span style="color:black">
+      </span><span style="color:gray">x</span><span style="color:black">)<span style="mso-tab-count:
+1">&nbsp;&nbsp;</span>Zpracuje
+      příkaz <i>ret</i> podle předpisu <i>x</i> (0 pro příkaz z&nbsp;příkazového
+      řádku, jinak pro ostatní příkazy)<o:p>
+      </o:p>
+      </span></p>
+      <p style="mso-layout-grid-align:none;text-autospace:none"><span style="color:blue">long</span><span style="color:black">
+      </span><span style="color:#880000">GetHistLength</span><span style="color:black">()<span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span><span style="mso-tab-count:
+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;
+      </span>vrací
+      velikost pole historie<o:p>
+      </o:p>
+      </span></p>
+      <p><span style="color:blue">CString</span><span style="color:black"> </span><span style="color:#880000">GetPrvekData</span><span style="color:black">(</span><span style="color:blue">long</span><span style="color:black">
+      </span><span style="color:gray">x</span><span style="color:black">)<span style="mso-tab-count:1">&nbsp;
+      </span><span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span>vrací data prvku z&nbsp;historie na pozici <i>x</i><o:p>
+      &nbsp;<br>
+      <br>
+      <br>
+      Třídy:<o:p>
+      </o:p>
+      </span></p>
+      <p style="margin-left:141.6pt;text-indent:-141.6pt"><span style="color:black"><a href="../src/InterCom/Expression.h" target="_blank">CExpression
+      (expression.h) </a> <span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;</span>– slouží k&nbsp;rozparsrování příkazu na knihovnu, jméno,
+      obecný výčet parametrů a seznam parametrů se jménem a vyhodnocenými
+      hodnotami používá MaPa.dll ve fci Evaluate(výraz)<o:p>
+      </o:p>
+      </span></p>
+      <p style="margin-left:141.6pt;text-indent:-141.6pt"><span style="color:black"><o:p><a href="../src/InterCom/Interpret.h" target="_blank">CInterpret
+      (interpret.h)</a> <span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span>– Zajišťuje zprávu knihoven a souborů, zpracovává příkazy,
+      obsahuje funkce pro zpracování příkazů pro interpret, používá
+      MaPa.dll ve fci Evaluate(ret, poleparam)<o:p>
+      &nbsp;
+      </span></p>
+      <p style="margin-left:141.6pt;text-indent:-141.6pt"><span style="color:black"><a href="../src/InterCom/Library.h" target="_blank">CLibrary
+      (library.h)<span style="mso-tab-count:1"></span></a><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;
+      </span>– Skladovací třída pro knihovnu, zpravuje knihovnu a její příkazy<o:p>
+      &nbsp;
+      </span></p>
+      <p style="margin-left:141.6pt;text-indent:-141.6pt"><a href="../src/InterCom/Parametrs.h" target="_blank">CParametrs
+      (parametrs.h)</a><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span>– skladovací třída pro parametr – název, hodnota&nbsp;<o:p>
+      </o:p>
+      </p>
+      <p style="margin-left:141.6pt;text-indent:-141.6pt"><a href="../src/InterCom/Prikazy.h" target="_blank">CPrikazy
+      (prikazy.h)<span style="mso-tab-count:1"></span></a><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span>– skladovací třída pro příkazy, obsahuje pole parametrů, název
+      a tělo příkazu</o:p>
+      </p>
+      <p style="margin-left:141.6pt;text-indent:-141.6pt"><a href="../src/InterCom/Turtle.h" target="_blank">CTurtle
+      (turtle.h)</a><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span>– Zajišťuje zpracování příkazů pro želvu, obsahuje
+      historii „příkazů“ potřebnou pro vykreslování&nbsp;<o:p>
+      </o:p>
+      </p>
+      <p style="margin-left:141.6pt;text-indent:-141.6pt"><a href="../src/InterCom/Prvek.h" target="_blank">CPrvek (prvek.h)<span style="mso-tab-count:1">&nbsp;</span></a><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span><span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span>– dědí z&nbsp;něj následující třídy, jejichž instance
+      používá želva při vytváření historie „příkazů“</p>
+      <p style="margin-left:141.6pt;text-indent:-141.6pt"><a href="../src/InterCom/Krok.h" target="_blank">CKrok (krok.h)</a><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span>– krok želvy</p>
+      <p style="margin-left:141.6pt;text-indent:-141.6pt"><a href="../src/InterCom/Rotace.h" target="_blank">CRotace (rotace.h)<span style="mso-tab-count:1">&nbsp;</span></a><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span>– rotace želvy</p>
+      <p style="margin-left:141.6pt;text-indent:-141.6pt"><a href="../src/InterCom/Presun.h" target="_blank">CPresun
+      (presun.h)</a><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span><span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp; </span>– změna pozice želvy
+      setpos(x,y,z)</p>
+      <p style="margin-left:141.6pt;text-indent:-141.6pt"><a href="../src/InterCom/TurBlok.h" target="_blank">CTurBlok
+      (turblok.h)</a><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span>– blok turtle .. tend</p>
+      <p style="margin-left:141.6pt;text-indent:-141.6pt">Bližší popis tříd
+      je obsažen v&nbsp;jejich hlavičkových souborech
+      </p>
+      <p style="margin-left:141.6pt;text-indent:-141.6pt">&nbsp;
+      </p>
+      <p style="margin-left:141.6pt;text-indent:-141.6pt">&nbsp;
+      </p>
+      <p style="margin-left:141.6pt;text-indent:-141.6pt">
+      <A name=VLAPROG></A><b><font size="4">Vlastní program – OpenGl.exe<o:p>
+      </font></b><span style="font-weight:normal">
+      </o:p>
+      </span>
+      </p>
+      <p>Obsahuje čtyři dialogy:&nbsp;<o:p>
+      </o:p>
+      </p>
+      <p>CBarvy (barvy.h) <span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span><span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span>– obstarává změnu barvy pozadí a osového kříže</p>
+      <p>CCommandline (commandline.h)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; – příkazová řádka</p>
+      <p>CEditorDialog (editordialog.h)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      – editor jazyka logo</p>
+      <p>CSpecFileDlg (specfiledlg.h)<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span><span style="mso-tab-count: 1"> </span>– open file a save file dialog</p>
+      <p>&nbsp;<o:p>
+      </o:p>
+      </p>
+      <p><a href="../src/zelva/MyInter.h" target="_blank">CMyInter (myinter.h)<span style="mso-tab-count:1"></span></a><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span>– obsluhuje InterCom.dll&nbsp;<o:p>
+      </o:p>
+      </p>
+      <p>Dále obsahuje klasické MFC generované knihovny.</p>
+      <p>&nbsp;<o:p>
+      COpenGlView (openglview.h)­– obstarává celou logiku programu<sub><o:p>
+      </o:p>
+      </sub>
+      </p>
+      <p>&nbsp;</td>
+  </tr> 
+</table>
+
+</body>
+
+</html>

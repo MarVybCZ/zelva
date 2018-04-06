@@ -1,0 +1,41 @@
+define trojuhelnik (a)
+loop (3)
+  forward (a)
+  LR( 120)
+lend
+end
+
+define sierpinski (a)
+ if (a>1) 
+ loop (3) 
+   sierpinski (a/2)
+   forward (a)
+   LR( 120)
+ lend
+else
+ trojuhelnik(a)
+iend
+end
+
+define jehlan()
+  clear
+  turtle
+  setcolor (0.5, 1, 1)
+  sierpinski( 10)
+  CL( 70.5)
+  setcolor (1,0.5,1)
+  sierpinski( 10)
+  LR( 60)
+  CL(-109.5)
+  setcolor( 1,1,0.5)
+  sierpinski( 10)
+  tend
+  PenUp
+  forward(10)
+  PenDown
+  LR(120)
+  CL(70.5)
+  setcolor( 0.5,1,0.5)
+  sierpinski( 10)
+
+end

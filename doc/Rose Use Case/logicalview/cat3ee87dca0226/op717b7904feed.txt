@@ -1,0 +1,5 @@
+*******************************************************************
+Vyhodnoti direktivu IfElse
+vyraz	: in CExpression* podminka pro vyhodnoceni
+return	: void
+*******************************************************************

@@ -1,0 +1,6 @@
+zpracuje prikaz ze souboru (1) nebo z lajny (0)
+*******************************************************************
+Nahraje soubor do pameti
+File	: in CString cesta souboru
+return	: void
+*******************************************************************

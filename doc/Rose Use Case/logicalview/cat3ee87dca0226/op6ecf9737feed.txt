@@ -1,0 +1,7 @@
+*******************************************************************
+Zpracuje vsechny prikazy
+ret		: in CString libovolny retezec
+x		: in int 0 pro zelvi a uzivateli prikazy(z command linu)
+other pro cokoli
+return	: void
+*******************************************************************

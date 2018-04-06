@@ -1,0 +1,1 @@
+pointer na aktualne zpracovavany prikaz

@@ -1,0 +1,339 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0032)http://kirya.narod.ru/mpref.html -->
+<HTML><HEAD><TITLE>My Site</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1251">
+<META http-equiv=Content-Language content=ru>
+<STYLE>BODY {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; FONT-FAMILY: Arial, Verdana, sans-serif, Times ET
+}
+TD {
+	FONT-SIZE: 12px; FONT-FAMILY: Verdana, Arial, sans-serif, Times ET
+}
+A {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #aaaaff; FONT-FAMILY: Arial, Verdana, sans-serif, Times ET; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #aaaaff
+}
+A:visited {
+	COLOR: #aaaaff
+}
+A:hover {
+	COLOR: white
+}
+</STYLE>
+
+<META content="MSHTML 6.00.2800.1141" name=GENERATOR></HEAD>
+<BODY text=#ffffff bgColor=#ffffff>
+<CENTER>
+<TABLE cellSpacing=0 cellPadding=1 width=752 bgColor=black border=0 
+borderwidth="1">
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE height="100%" cellSpacing=0 cellPadding=0 width="100%" 
+      bgColor=white border=0 borderwidth="1">
+        <TBODY>
+        <TR>
+          <TD>
+            <TABLE height=100 width=750 border=0>
+              <TBODY>
+              <TR>
+                <TD vAlign=center align=middle width=220><A 
+                  href="http://kirya.narod.ru/"><IMG 
+                  src="My Site_files/Logo.gif" border=0></A></TD>
+                <TD vAlign=center align=middle><!-- Russian LinkExchange code START --><IFRAME 
+                  marginWidth=0 marginHeight=0 src="My Site_files/erle.htm" 
+                  frameBorder=0 width=468 scrolling=no 
+                  height=60>
+	  <a href=http://www.linkexchange.ru/users/040483/goto.map target=_top>
+	  <img src=http://www.linkexchange.ru/cgi-bin/rle.cgi?40483?1
+	  alt="RLE Banner Network" border=0 height=60 width=468></a>
+	  </IFRAME><!-- Russian LinkExchange code END --></TD></TR></TBODY></TABLE>
+            <TABLE cellSpacing=0 cellPadding=0 width=750 border=0>
+              <TBODY>
+              <TR>
+                <TD bgColor=black colSpan=5 height=4><IMG height=4 
+                  src="My Site_files/black.gif" width=730 border=0></TD></TR>
+              <TR>
+                <TD vAlign=top width=200 bgColor=#004488><!--                    Menu  START                         -->&nbsp;<A 
+                  href="http://kirya.narod.ru/index_e.html">Home</A><BR>&nbsp;<A 
+                  href="http://kirya.narod.ru/about_e.html">About 
+                  me</A><BR>&nbsp;<A 
+                  href="http://kirya.narod.ru/links_e.html">Favourite 
+                  links</A><BR>&nbsp;<A 
+                  href="http://kirya.narod.ru/cities_e.html">Cities i 
+                  visited</A><BR>&nbsp;<A 
+                  href="http://kirya.narod.ru/index.html"><IMG 
+                  src="My Site_files/RUS.gif" border=0 
+                  textalign="middle">Русская версия</A><BR><BR>&nbsp; 
+                  <BR><BR>&nbsp; <A href="mailto:zkv@mail.ru"><IMG 
+                  src="My Site_files/Mail.gif" border=0></A> <A 
+                  href="mailto:zkv@mail.ru">Mail me</A> <BR>&nbsp; <!--                    Menu  END                         --></TD>
+                <TD width=4 bgColor=black><IMG height=20 
+                  src="My Site_files/black.gif" width=4></TD>
+                <TD width=20 bgColor=#004488>&nbsp;</TD>
+                <TD vAlign=top width=510 bgColor=#004488><BR><!--                    Text  START                         -->
+                  <P align=center><B><BIG>MathParser Reference</BIG></B></P>
+                  <P align=center><A 
+                  href="http://kirya.narod.ru/mathparser.html">About</A> | <A 
+                  href="http://kirya.narod.ru/mpdownload.html">Download</A> | 
+                  Reference</P>
+                  <P align=center><I><SMALL>(The most of this reference is taken 
+                  from the reference to CCalc library)</SMALL></I></P>
+                  <P align=center><B>Contents</B></P>
+                  <UL>
+                    <LI><A 
+                    href="http://kirya.narod.ru/mpref.html#SYNTAX">Formulas 
+                    syntax</A> 
+                    <LI><A 
+                    href="http://kirya.narod.ru/mpref.html#LIBRARY">Library 
+                    reference</A> </LI></UL><A name=SYNTAX></A>
+                  <P align=center><B>MathParser formulas syntax</B></P>
+                  <P>&nbsp;&nbsp;You may use mathematically-correct formulas, 
+                  including brackets, functions etc. 
+                  <P><B>MathParser formulas syntax admits:</B></P>
+                  <UL>
+                    <LI>Mathematical constants E and Pi 
+                    <LI>Large number of arithmetical and bitwise operations: 
+                    <DL>
+                      <DT><B>+ - * /</B> 
+                      <DD>It is obvious 
+                      <DT><B>%</B> 
+                      <DD>Remainder 
+                      <DT><B>**</B> 
+                      <DD>Power 
+                      <DT><B>&amp; | ^ ~</B> 
+                      <DD>Bitwise and / or / xor / not 
+                      <DT><B>$</B> 
+                      <DD>Without name. See <A 
+                      href="http://kirya.narod.ru/mpref.html#notes">notes</A>. 
+                      </DD></DL>
+                    <LI>Logical operations and relations 
+                    <DL>
+                      <DT><B>&lt;&gt; = &gt; &lt;</B> 
+                      <DD>not equal / equal / greater / less relations 
+                      <DT><B>&amp;&amp; ||</B> 
+                      <DD>Logical and / or </DD></DL>
+                    <LI>Functions <PRE>ARCTAN, COS, SIN, TAN, ABS, EXP, LN, LOG, SQRT, SQR,
+INT, FRAC, TRUNC, ROUND( x, precision ), ARCSIN, ARCCOS, SGN, SIGN</PRE>
+                    <LI>Conditional operator <PRE>&lt;condition&gt; ? &lt;true expr.&gt; : &lt;false expr.&gt;
+</PRE>where 
+                    <DL>
+                      <DT>&lt;condition&gt; 
+                      <DD>- logical condition. 0 - false, nonzero - true. 
+                      Logical relations and operations may be used. 
+                      <DT>&lt;true expr.&gt; 
+                      <DD>- expression for true expression 
+                      <DT>&lt;false expr.&gt; 
+                      <DD>- expression for false expression </DD></DL></LI></UL>
+                  <P><B>Correct formulas examples</B></P>
+                  <DL>
+                    <DT>(sin(Pi/2) + 1) / 4 
+                    <DD>= 0.5 
+                    <DT>2 &gt; 3 
+                    <DD>= 0 (false) 
+                    <DT>(2*2=4) ? 1 : 0 
+                    <DD>= 1 
+                    <DT>round( 1.2345, 2 ) 
+                    <DD>= 1.23 
+                    <DT>round( 27.45, -1 ) 
+                    <DD>= 30 </DD></DL><A name=notes></A>
+                  <P><B>Notes</B></P>
+                  <DL>
+                    <DT>$ operation. 
+                    <DD>A $ B - integerly divide A by B; if there was a 
+                    remainder, the result is increased by 1. Usage example: for 
+                    production B (or less) units of wares we spend one unit of 
+                    resource ("discrete" resource). It is necessary to know how 
+                    much resource units we need for producting A units of warez. 
+                    </DD></DL>
+                  <UL></UL>
+                  <P><B>MathParser script</B></P>
+                  <P>MathParser script begins with "#!". The syntax is clear 
+                  from the example: <PRE>#!
+a := 2;
+b := 3;
+return a * b + 1;
+</PRE><A name=LIBRARY></A>
+                  <P align=center><B>CCalc Library </B></P>
+                  <P align=justify>There library consists of three Classes with 
+                  their own API: 
+                  <DL>
+                    <DT><A 
+                    href="http://kirya.narod.ru/mpref.html#StrMap"><B>CStrMap</B></A> 
+                    (StrMap.h) 
+                    <DD>Small "sublibrary" for working with "string lists". You 
+                    must use this class if you want to add your own user-defined 
+                    functions (UDFs) and user-defined variables (UDVs) 
+                    <DT><B>CLexer</B> (lexer.h) 
+                    <DD>Universal lexical analyser used as backend layer for 
+                    parsing expressions. In general developers have no need to 
+                    communicate directly with Lexer. But they can use it 
+                    separately for their own needs. 
+                    <DT><A 
+                    href="http://kirya.narod.ru/mpref.html#MathParser"><B>MathParser</B></A> 
+                    (MathParser.h) 
+                    <DD>Core class which calculates expressions. It is very easy 
+                    to use but may be hard to initialize to match your needs. 
+                    </DD></DL><A name=StrMap></A>
+                  <P align=center><B>StrMap reference </B></P>
+                  <TABLE cellSpacing=0 cellPadding=5 bgColor=#0050a0>
+                    <TBODY>
+                    <TR>
+                      <TD><PRE>class CStrMap{
+	int FCount, FCapacity;
+	int FExtraLen, FRecordLen;
+	nt FDoDuplicate;
+public:
+	char *FList;
+	CStrMap( int extrabytes=sizeof(double), int dup=0);
+	void CreateFromChain( int extrabytes, char *strchain, void *data );
+	~CStrMap();
+	void AddString(char *str, void *data);
+	void AddStrLen(char *str, int len, void *data );
+	void ShrinkMem();
+	void Trim(int NewCount );
+	void TrimClear(int NewCount );
+	void SetCapacity(int NewCapacity );
+	int IndexOf(char *str, void **data );
+	int LenIndexOf(char *str, int len, void **data );
+	char* GetString(int index, int *len, void **data );
+	void FillFromChain(char *strchain, void *data );
+};
+</PRE></TD></TR></TBODY></TABLE><BR><I><SMALL>(Note: from 
+                  library version you don't have to create parameters CStrMap, 
+                  CMathParser::Parameters now is not pointer but a "normal" 
+                  object)</SMALL></I> <BR>I have no time to describe each 
+                  function, just some examples of most common usage: 
+                  <P><B>Creating list of variables from "char 
+                  chain"</B></P>Variables will be associated with 
+                  <TT>double</TT> values: <BR><BR>
+                  <TABLE cellSpacing=0 cellPadding=5 bgColor=#0050a0>
+                    <TBODY>
+                    <TR>
+                      <TD><PRE>char varnames[] = "X\000" "Y\000" "Z\000\000";
+double varvalues[] = { 5.3, 6.1, -7.45 };
+
+mp.Parameters.FillFromChain( sizeof(double), varnames, varvalues );
+
+...
+
+</PRE></TD></TR></TBODY></TABLE>Note that <TT>varnames</TT> is 
+                  a special data structure ("char chain"):<BR>a string 
+                  containing zero-separated "substrings" terminated by double 
+                  zero. 
+                  <P><B>Creating list of variables step-by-step</B></P>
+                  <TABLE cellSpacing=0 cellPadding=5 bgColor=#0050a0>
+                    <TBODY>
+                    <TR>
+                      <TD><PRE>
+double varvalues[] = { 5.3, 6.1 };
+
+mp.Parameters.AddString( "X", varvalues );
+mp.Parameters.AddString( "Y", varvalues+1 );
+</PRE></TD></TR></TBODY></TABLE><A name=MathParser></A>
+                  <P align=center><B>MathParser reference</B></P>
+                  <TABLE cellSpacing=0 cellPadding=5 bgColor=#0050a0>
+                    <TBODY>
+                    <TR>
+                      <TD><PRE>class CMathParser{
+	Operation OpStack[MAX_STACK_SIZE];
+	double	ValStack[MAX_STACK_SIZE];
+	int	OpTop, ValTop;
+	int	ObrDist;
+	CLexer Lexer;
+	int	script;
+	CStrMap *VarParams;
+	char* ParseScript(double *result);
+	char* ParseFormula(double *result);
+	char* PrepareFormula();
+	char* Calc();
+	char* CalcToObr();
+public:
+	CStrMap *Parameters;
+	CStrMap *ExtFunctions;
+	PrmSrchFunc MoreParams;
+	void  *ParamFuncParam;
+	CMathParser( char *MoreLetters=NULL );
+	char* Parse(char *Formula, double *result);
+	~CMathParser();
+};
+</PRE></TD></TR></TBODY></TABLE>Some examples of usage: 
+                  <P><B>Initializing MathParser for using with list of UDVs 
+                  </B></P>
+                  <TABLE cellSpacing=0 cellPadding=5 bgColor=#0050a0>
+                    <TBODY>
+                    <TR>
+                      <TD><PRE>CMathParser* parser = new CMathParser();
+
+/* ... creating list of variables. See CStrMap reference for example */
+
+parser.Parameters.AddString("X", &amp;x);
+
+/* ... parsing expressions */
+
+delete parser;
+</PRE></TD></TR></TBODY></TABLE>
+                  <P><B>Calculating expression </B></P>
+                  <TABLE cellSpacing=0 cellPadding=5 bgColor=#0050a0>
+                    <TBODY>
+                    <TR>
+                      <TD><PRE>double result;
+char *ErrMsg = parser-&gt;Parse("sin(x * x) / 2", &amp;result );
+if ( ErrMsg == NULL )
+    printf( "%.15G\n", result );
+else {
+    puts( ErrMsg );
+</PRE></TD></TR></TBODY></TABLE><BR>
+                  <HR>
+
+                  <P>Of course this documentation is incomplete as I have no 
+                  time now to write more. For more information see 
+                  <B>test.cpp</B> as an example of usage of the library, or you 
+                  can contact me by e-mail (<A 
+                  href="http://kirya.narod.ru/zkv@mail.ru">http://kirya.narod.ru/zkv@mail.ru</A>) 
+                  <BR>&nbsp; <!--                    Text  End                         --></P></TD>
+                <TD width=16 bgColor=#004488>&nbsp;</TD></TR>
+              <TR>
+                <TD bgColor=black colSpan=5 height=4><IMG height=4 
+                  src="My Site_files/black.gif"></TD></TR></TBODY></TABLE>&nbsp;<SMALL><SMALL><FONT 
+            face=Arial color=black>© 2002 Kirill Zaborski</FONT></SMALL></SMALL> 
+<!-- HotLog -->
+            <SCRIPT language=javascript>
+hotlog_js="1.0";hotlog_d=document; hotlog_n=navigator;hotlog_rn=Math.random();
+hotlog_n_n=(hotlog_n.appName.substring(0,3)=="Mic")?0:1;
+hotlog_r=""+hotlog_rn+"&s=24247&r="+escape(hotlog_d.referrer)+"&pg="+
+escape(window.location.href);
+hotlog_d.cookie="hotlog=1"; hotlog_r+="&c="+(hotlog_d.cookie?"Y":"N");
+hotlog_d.cookie="hotlog=1; expires=Thu, 01-Jan-70 00:00:01 GMT"</SCRIPT>
+
+            <SCRIPT language=javascript1.1>
+hotlog_js="1.1";hotlog_r+="&j="+(navigator.javaEnabled()?"Y":"N")</SCRIPT>
+
+            <SCRIPT language=javascript1.2>
+hotlog_js="1.2";hotlog_s=screen;
+hotlog_r+="&wh="+hotlog_s.width+'x'+hotlog_s.height+"&px="+((hotlog_n_n==0)?
+hotlog_s.colorDepth:hotlog_s.pixelDepth)</SCRIPT>
+
+            <SCRIPT language=javascript1.3>hotlog_js="1.3"</SCRIPT>
+
+            <SCRIPT language=javascript>hotlog_r+="&js="+hotlog_js;
+hotlog_d.write("<a href=http://click.hotlog.ru/?24247 target=_top><img "+
+"src=\"http://hit2.hotlog.ru/cgi-bin/hotlog/count?"+
+hotlog_r+"&\" border=0 width=1 height=1 alt=HotLog></a>")</SCRIPT>
+            <NOSCRIPT><A href="http://click.hotlog.ru/?24247" target=_top><IMG 
+            height=1 alt=HotLog src="My Site_files/count.gif" width=1 
+            border=0></A></NOSCRIPT> 
+</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></CENTER><!-- ><!-- "><!-- '><!-- --></TEXTAREA></FORM></TITLE></COMMENT></A>
+<DIV></DIV></SPAN></ILAYER></LAYER></IFRAME></NOFRAMES></STYLE></NOSCRIPT></TABLE></SCRIPT></APPLET></FONT>
+<STYLE>#bn {
+	DISPLAY: block
+}
+#bt {
+	DISPLAY: block
+}
+</STYLE>
+
+<SCRIPT language=JavaScript src="My Site_files/163"></SCRIPT>
+<!-- mailto:spm111@yandex.ru --></BODY></HTML>

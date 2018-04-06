@@ -1,0 +1,3 @@
+CKrok *Pozice;
+Pozice = HistUpperBound();
+Pozice->Color[0] =

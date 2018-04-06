@@ -1,0 +1,2 @@
+CToolBar    m_wndToolBar;
+Generated message map functions

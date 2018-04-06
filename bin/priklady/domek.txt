@@ -1,0 +1,47 @@
+define domek(a)
+    LR( 180)
+    loop (5) 
+        LR(- 90)
+        forward (a)
+    lend
+    LR(- 30)
+    forward (a)
+    LR(- 120)
+    forward (a)
+    LR( -30)
+    forward (a)
+    LR( 90)
+end
+
+
+define domek2 (a)
+if( a > 10) 
+   LR( 180)
+   loop( 5) 
+       LR(- 90)
+       forward (a / 4)
+       domek2 (a / 2)
+       forward (a / 4)
+   lend
+   LR(- 30)
+   forward (a / 4)
+   domek2 (a / 2)
+   forward (a / 4)
+   LR(- 120)
+   forward (a / 4)
+   domek2 (a / 2)
+   forward (a / 4)
+   LR(- 30)
+   forward (a / 4)
+   domek2 (a / 2)
+   forward (a / 4)
+   LR( 90)    
+else
+   domek (a / 3)    
+iend
+end 
+
+define main()
+  clear()
+  domek2(25)
+end

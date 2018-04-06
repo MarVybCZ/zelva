@@ -1,0 +1,133 @@
+# Microsoft Developer Studio Generated Dependency File, included by InterCom.mak
+
+.\Expression.cpp : \
+	".\defines.h"\
+	".\Expression.h"\
+	".\mapa.h"\
+	".\Parametrs.h"\
+	".\Prikazy.h"\
+	
+
+.\InterCom.cpp : \
+	".\defines.h"\
+	".\Expression.h"\
+	".\InterCom.h"\
+	".\InterCom_i.c"\
+	".\Interface.h"\
+	".\Interpret.h"\
+	".\Krok.h"\
+	".\Library.h"\
+	".\mapa.h"\
+	".\Parametrs.h"\
+	".\Presun.h"\
+	".\Prikazy.h"\
+	".\Prvek.h"\
+	".\Rotace.h"\
+	".\TurBlok.h"\
+	".\Turtle.h"\
+	
+
+.\InterCom.rc : \
+	".\InterCom.tlb"\
+	".\Interface.rgs"\
+	
+
+.\Interface.cpp : \
+	".\defines.h"\
+	".\Expression.h"\
+	".\InterCom.h"\
+	".\Interface.h"\
+	".\Interpret.h"\
+	".\Krok.h"\
+	".\Library.h"\
+	".\mapa.h"\
+	".\Parametrs.h"\
+	".\Presun.h"\
+	".\Prikazy.h"\
+	".\Prvek.h"\
+	".\Rotace.h"\
+	".\TurBlok.h"\
+	".\Turtle.h"\
+	
+
+.\Interpret.cpp : \
+	".\defines.h"\
+	".\Expression.h"\
+	".\Interpret.h"\
+	".\Krok.h"\
+	".\Library.h"\
+	".\mapa.h"\
+	".\Parametrs.h"\
+	".\Presun.h"\
+	".\Prikazy.h"\
+	".\Prvek.h"\
+	".\Rotace.h"\
+	".\TurBlok.h"\
+	".\Turtle.h"\
+	
+
+.\Krok.cpp : \
+	".\defines.h"\
+	".\Krok.h"\
+	".\Prvek.h"\
+	
+
+.\Library.cpp : \
+	".\defines.h"\
+	".\Library.h"\
+	".\Parametrs.h"\
+	".\Prikazy.h"\
+	
+
+.\mapa.cpp : \
+	".\mapa.h"\
+	
+
+.\Parametrs.cpp : \
+	".\defines.h"\
+	".\Parametrs.h"\
+	
+
+.\Presun.cpp : \
+	".\defines.h"\
+	".\Presun.h"\
+	".\Prvek.h"\
+	
+
+.\Prikazy.cpp : \
+	".\defines.h"\
+	".\Parametrs.h"\
+	".\Prikazy.h"\
+	
+
+.\Prvek.cpp : \
+	".\defines.h"\
+	".\Prvek.h"\
+	
+
+.\Rotace.cpp : \
+	".\defines.h"\
+	".\Prvek.h"\
+	".\Rotace.h"\
+	
+
+.\StdAfx.cpp : \
+	"..\..\..\..\..\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	".\StdAfx.h"\
+	
+
+.\TurBlok.cpp : \
+	".\defines.h"\
+	".\Prvek.h"\
+	".\TurBlok.h"\
+	
+
+.\Turtle.cpp : \
+	".\defines.h"\
+	".\Krok.h"\
+	".\Presun.h"\
+	".\Prvek.h"\
+	".\Rotace.h"\
+	".\TurBlok.h"\
+	".\Turtle.h"\
+	

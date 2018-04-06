@@ -1,0 +1,5 @@
+*******************************************************************
+vraci delku PoleParam - pole parametru
+return	: int
+*******************************************************************
+return NumberParam.GetUpperBound();

@@ -1,0 +1,2 @@
+rotace nahoru, dolu
+celkemLR +=angle;

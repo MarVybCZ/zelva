@@ -1,0 +1,41 @@
+// MaPa.idl : IDL source for MaPa.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (MaPa.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(E05E32C5-1676-4971-944C-A08A8BDFD347),
+		dual,
+		helpstring("IMaPaInter Interface"),
+		pointer_default(unique)
+	]
+	interface IMaPaInter : IDispatch
+	{
+		[id(1), helpstring("method AddString")] HRESULT AddString([in]BSTR *name, [in] double *value);
+		[id(2), helpstring("method Parse")] HRESULT Parse([in] BSTR *Formula, [out,retval] double *result);
+		[id(3), helpstring("method GetErrorMes")] HRESULT GetErrorMes([out, retval] BSTR *message);
+	};
+
+[
+	uuid(879675BC-8D8D-493C-842F-46C7D711E67C),
+	version(1.0),
+	helpstring("MaPa 1.0 Type Library")
+]
+library MAPALib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(7F9FB35E-04EC-4B7C-8828-A0966A038DA2),
+		helpstring("MaPaInter Class")
+	]
+	coclass MaPaInter
+	{
+		[default] interface IMaPaInter;
+	};
+};

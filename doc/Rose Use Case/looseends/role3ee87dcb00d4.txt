@@ -1,0 +1,2 @@
+true pen up / false pen down
+int StSpCount;
