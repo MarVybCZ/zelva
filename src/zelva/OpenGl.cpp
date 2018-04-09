@@ -48,7 +48,7 @@ BOOL COpenGlApp::InitInstance()
 {
 	AfxEnableControlContainer();
 
-	
+
 	// Standard initialization
 	// If you are not using these features and wish to reduce the size
 	//  of your final executable, you should remove from the following
@@ -62,9 +62,9 @@ BOOL COpenGlApp::InitInstance()
 #endif
 */
 
-	// Change the registry key under which our settings are stored.
-	// TODO: You should modify this string to be something appropriate
-	// such as the name of your company or organization.
+// Change the registry key under which our settings are stored.
+// TODO: You should modify this string to be something appropriate
+// such as the name of your company or organization.
 	SetRegistryKey(_T("Local AppWizard-Generated Applications"));
 
 	LoadStdProfileSettings();  // Load standard INI file options (including MRU)
@@ -74,7 +74,7 @@ BOOL COpenGlApp::InitInstance()
 
 	CSingleDocTemplate* pDocTemplate;
 	pDocTemplate = new CSingleDocTemplate(
-		IDR_MAINFRAME,		
+		IDR_MAINFRAME,
 		RUNTIME_CLASS(COpenGlDoc),
 		RUNTIME_CLASS(CMainFrame),       // main SDI frame window
 		RUNTIME_CLASS(COpenGlView));
@@ -91,7 +91,7 @@ BOOL COpenGlApp::InitInstance()
 	// The one and only window has been initialized, so show and update it.
 	m_pMainWnd->ShowWindow(SW_SHOW);
 	m_pMainWnd->UpdateWindow();
-	
+
 	return TRUE;
 }
 
@@ -104,14 +104,14 @@ class CAboutDlg : public CDialog
 public:
 	CAboutDlg();
 
-// Dialog Data
-	//{{AFX_DATA(CAboutDlg)
+	// Dialog Data
+		//{{AFX_DATA(CAboutDlg)
 	enum { IDD = IDD_ABOUTBOX };
 	//}}AFX_DATA
 
 	// ClassWizard generated virtual function overrides
 	//{{AFX_VIRTUAL(CAboutDlg)
-	protected:
+protected:
 	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV support
 	//}}AFX_VIRTUAL
 

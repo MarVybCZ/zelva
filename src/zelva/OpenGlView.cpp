@@ -551,9 +551,10 @@ void COpenGlView::Kriz()
 	glBegin(GL_LINES);
 	glColor3f(RGBkriz[0], RGBkriz[1], RGBkriz[2]);//cerv
 
-	glVertex3i(0.0f, -15.0f, 0.0f);
-	//glColor3f(1.0f,1.0f,0.0f);//zluta
-	glVertex3f(0.0f, 15.0f, 0.0f);
+	//glVertex3i(0.0f, -15.0f, 0.0f);
+	glVertex3i(0, -15, 0);
+	//glVertex3f(0.0f, 15.0f, 0.0f);
+	glVertex3f(0, 15, 0);
 	glEnd();
 
 	glBegin(GL_LINES);
@@ -759,7 +760,7 @@ void COpenGlView::CreateSceneList()
 	glMaterialfv(GL_FRONT_AND_BACK, GL_COLOR_INDEXES, xx);
 	glPushMatrix();
 	glRotatef(-90, 1, 0, 0);
-	glTranslatef(0, -0.2, 0);
+	glTranslatef(0, (GLfloat)(-0.2), 0);
 
 	gluDisk(obj2, 0.1, 0.2, 5, 5);
 	glPopMatrix();
@@ -797,7 +798,7 @@ void COpenGlView::CreateSL()
 
 			ind += 2;
 			nameRet = GetData(&ind, ret);
-			float krok = atof(nameRet);
+			double krok = atof(nameRet);
 
 			if (StartPoint != 49)
 			{
@@ -807,27 +808,27 @@ void COpenGlView::CreateSL()
 
 				ind += 1;
 				nameRet = GetData(&ind, ret);
-				Color1 = atof(nameRet);
+				Color1 = (float)atof(nameRet);
 
 				ind += 1;
 				nameRet = GetData(&ind, ret);
-				Color2 = atof(nameRet);
+				Color2 = (float)atof(nameRet);
 
 				ind += 1;
 				nameRet = GetData(&ind, ret);
-				Color3 = atof(nameRet);
+				Color3 = (float)atof(nameRet);
 
 				glBegin(GL_LINES);
 				glColor3f(Color1, Color2, Color3);
-				glVertex3f(0, 0, 0);
-				glVertex3f(krok, 0, 0);
+				glVertex3d(0, 0, 0);
+				glVertex3d(krok, 0, 0);
 				glEnd();
-				glTranslatef(krok, 0, 0);
+				glTranslated(krok, 0, 0);
 			}
 
 			if (StartPoint == 49)
 			{
-				glTranslatef(krok, 0, 0);
+				glTranslated(krok, 0, 0);
 			}
 		}
 
@@ -849,7 +850,7 @@ void COpenGlView::CreateSL()
 			nameRet = GetData(&ind, ret);
 			double z = atof(nameRet);
 
-			glRotatef(angle, x, y, z);
+			glRotatef((GLfloat)angle, (GLfloat)x, (GLfloat)y, (GLfloat)z);
 		}
 
 		if (nameRet == "PRESUN")
@@ -858,17 +859,17 @@ void COpenGlView::CreateSL()
 
 			ind += 1;
 			nameRet = GetData(&ind, ret);
-			float x = atof(nameRet);
+			double x = atof(nameRet);
 
 			ind += 1;
 			nameRet = GetData(&ind, ret);
-			float y = atof(nameRet);
+			double y = atof(nameRet);
 
 			ind += 1;
 			nameRet = GetData(&ind, ret);
-			float z = atof(nameRet);
+			double z = atof(nameRet);
 
-			glTranslatef(x, y, z);
+			glTranslated(x, y, z);
 		}
 
 		if (nameRet == "TURTLE")

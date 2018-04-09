@@ -471,10 +471,10 @@ bool CInterpret::UserCommand(CExpression vyraz)
 				{
 					if (vyraz.NumParLen() == pom->PoleParamLenght())
 					{
-						int xxx = pom->PoleParam[xx].Hodnota;
-						int yyy = vyraz.PoleParam[xx].Hodnota;
-						CString xxxx = pom->PoleParam[xx].Nazev;
-						CString yyyy = vyraz.PoleParam[xx].Nazev;
+						//						int xxx = pom->PoleParam[xx].Hodnota;
+						//						int yyy = vyraz.PoleParam[xx].Hodnota;
+						//						CString xxxx = pom->PoleParam[xx].Nazev;
+						//						CString yyyy = vyraz.PoleParam[xx].Nazev;
 
 						pom->PoleParam[xx].Hodnota = vyraz.PoleParam[xx].Hodnota;//Hodnota=vyraz.NumberParam[i];
 					}
@@ -519,7 +519,7 @@ void CInterpret::Loop(CString param)
 	CString prik;
 	CPrikazy &Prik = *ActualCommand;
 
-	int x = Evaluate(param, &Prik.PoleParam);
+	int x = (int)Evaluate(param, &Prik.PoleParam);
 	int poz = Prik.Pozice;
 	int kon = Prik.Pozice;
 	for (int i = 0; i < x; i++)
